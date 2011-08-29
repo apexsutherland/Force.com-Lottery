@@ -30,6 +30,7 @@ public class LotteryController {
             Contestant__c c = new Contestant__c(Name = 'Test' + i);
             contestants.add(c);
         }
+        insert contestants;
         
         Test.startTest();
             LotteryController lc =  new LotteryController();
