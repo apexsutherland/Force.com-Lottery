@@ -1,0 +1,13 @@
+<apex:page controller="LotteryController" sidebar="false"> 
+    <apex:pageBlock >
+        <apex:form >
+            <apex:pageBlockSection id="winnerOutput" columns="1"> 
+                <apex:commandButton action="{!winner}" value="Pick a winner"/>
+                <apex:outputText >Size: {!size}</apex:outputText>
+                <apex:outputText >Seed: {!seed}</apex:outputText>
+                <apex:outputText >Pick: {!pick}</apex:outputText>
+                <apex:outputText >Name: {!winnerName}</apex:outputText>
+            </apex:pageBlockSection>
+        </apex:form>
+    </apex:pageBlock>
+</apex:page>
